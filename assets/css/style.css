@@ -1,29 +1,4 @@
-.profile-pic {
-  position: relative;
-  max-width:130px;
-  max-height:130px;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
-  border-radius: 50% !important;
-}
 
-
-.profile-pic img {
-  width: 100%;
-  height: auto;
-}
-
-.myimg{
-  object-fit: cover;
-}
 .tracker {
   /* visibility: hidden; */
   position: fixed;
@@ -177,24 +152,30 @@ blockquote * {
 }
 
 /* main nav */
-
+/* Minimal flat navbar */
 nav {
-  background: white;
-  box-shadow: none;
-  height: 0;
+  background: #fff !important;
+  border-bottom: 1px solid #eee;
+  box-shadow: none !important;
 }
 
-/* nav {
-  background: rgb(149, 126, 212);
-  box-shadow: none;
-  height: 0;
-} */
-
-nav i {
-  padding: 0 15px;
-  position: relative;
-  top: 5px;
+nav .brand-logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0070f3 !important;
 }
+
+nav ul li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #0070f3 !important;
+}
+
 
 /* main */
 
