@@ -103,6 +103,7 @@
 /* body-color */
 
 body {
+  background-color: #000;
   color: #333;
   font-size: 18px;
 }
@@ -154,7 +155,7 @@ blockquote * {
 
 /* ---- REMOVE OLD SIDE NAV ---- */
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: none;   
   padding-left: 0;   /* remove the 190px gap from old sidebar */
   padding-top: 64px; /* make space for fixed navbar */
 }
