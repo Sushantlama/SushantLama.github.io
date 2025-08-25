@@ -151,12 +151,28 @@ blockquote * {
   text-align: center;
 }
 
-/* main nav */
-/* Minimal flat navbar */
+
+/* ---- REMOVE OLD SIDE NAV ---- */
+main {
+  background: url(../../assets/img/bg.png) repeat;
+  padding-left: 0;   /* remove the 190px gap from old sidebar */
+  padding-top: 64px; /* make space for fixed navbar */
+}
+
+ul.side-nav {
+  display: none; /* hide old Materialize sidebar nav (we use mobile-nav instead) */
+}
+
+/* ---- TOP NAV ---- */
 nav {
   background: #fff !important;
   border-bottom: 1px solid #eee;
   box-shadow: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav .brand-logo {
@@ -176,18 +192,6 @@ nav ul li a:hover {
   color: #0070f3 !important;
 }
 
-
-/* main */
-
-/* main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
-} */
-
-main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
-}
 
 dl {
   margin-top: 0.5rem;
